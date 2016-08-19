@@ -37,7 +37,7 @@ function sacp#enableForThisBuffer(options)
 
 	inoremap <expr> <buffer> <silent> <TAB>  pumvisible()?"\<C-n>":"\<TAB>"
 	inoremap <expr> <buffer> <silent> <S-TAB>  pumvisible()?"\<C-p>":"\<TAB>"
-	inoremap <expr> <buffer> <silent> <CR>  pumvisible()?"\<C-y>":"\<CR>"
+	inoremap <expr> <buffer> <silent> <CR>  pumvisible()?"\<C-y><CR>":"\<CR>"
 
 	call sacp#bufferMapForMappingDriven()
 
